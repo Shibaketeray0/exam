@@ -1,0 +1,70 @@
+@import "mixins";
+@import "custom-variables";
+.footer{
+  margin-top: 30px;
+  padding:89px 46px 71px 46px;
+  background: $main_black;
+  .navbar-brand {
+    height:24px;
+    font-size: 30px;
+    font-family: "Main_bold", cursive;
+    letter-spacing: 0.6px;
+    float: none;
+    padding: 0;
+    width: 50%;
+  }
+  .navbar-text {
+    display: block;
+    margin: 0;
+    float: none;
+    color: #fff;
+    letter-spacing: 0.6px;
+    word-spacing: 0.01px;
+    font-family: 'Quicksand', cursive;
+    font-weight: 300;
+    font-size: 15px;
+    width: 50%;
+  }
+  #block-icons{
+    flex-wrap: wrap;
+    width:50%;
+    flex-direction: row-reverse;
+    display: flex;
+    margin-left: auto;
+    margin-top: -44px;
+  }
+  .menu--icons{
+    max-width: 97px;
+    display: flex;
+    li{
+      a{
+        padding: 0;
+      }
+      a:hover{
+        background: none;
+      }
+      a:focus{
+        background: none;
+      }
+    }
+    .first, li:nth-child(2), .last{
+      margin-left: 11px;
+      a{
+        width:25px;
+        height:25px;
+        opacity: 0;
+      }
+    }
+    .first{
+      margin-left: 0;
+      background: url("../images/fb.png") center no-repeat;
+    }
+    li:nth-child(2){
+      background: url("../images/twit.png") center no-repeat;
+    }
+    .last{
+      background: url("../images/in.png") center no-repeat;
+    }
+  }
+}
+

@@ -1,0 +1,25 @@
+uuid: 60c2d5ca-6e4a-427b-88aa-a6f111a69fe7
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: menu_link_content.main.default
+targetEntityType: menu_link_content
+bundle: main
+mode: default
+content:
+  children:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

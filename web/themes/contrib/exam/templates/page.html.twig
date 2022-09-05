@@ -1,0 +1,60 @@
+
+{% set container = theme.settings.fluid_container ? 'container-fluid' : 'container' %}
+
+<div class="wrapper2">
+<div class="header_wrapper">
+  <header id="navbar" class="{{ container }}" role="banner">
+    {% if not navbar_attributes.hasClass(container) %}
+    <div class="header__inner">
+        {% endif %}
+        <div class="logo">
+          {{ page.header_logo }}
+        </div>
+        {% block navigation %}
+        <div class="navigation">
+          {{ page.navigation }}
+        </div>
+        {% endblock %}
+
+
+        {% if not navbar_attributes.hasClass(container) %}
+
+        {% if page.nav_sidebar %}
+
+          {% block nav_sidebar %}
+            <div  class="sidebar">
+              {{ page.nav_sidebar }}
+            </div>
+          {% endblock %}
+        {% endif %}
+    </div>
+    {% endif %}
+  </header>
+</div>
+
+{# Main #}
+{% block main %}
+    <div role="main" class="main-container js-quickedit-main-content">
+      <div class="row">
+        <section{{ content_attributes.addClass(content_classes) }}>
+          {# Content #}
+          {% block content %}
+            {{ page.content }}
+          {% endblock %}
+        </section>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+{% if page.footer %}
+  {% block footer %}
+    <div class="footer">
+      <footer  class="footer_inner {{ container }}" role="contentinfo">
+        {{ page.footer }}
+      </footer>
+    </div>
+  {% endblock %}
+{% endif %}
+
+

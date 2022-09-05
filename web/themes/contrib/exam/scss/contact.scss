@@ -1,0 +1,51 @@
+@import "mixins";
+@import "custom-variables";
+.contact_title{
+  margin-top: 30px;
+  @include title_styles;
+  font-size: 20px;
+  .col-12 > *{
+    margin:0 auto;
+  }
+  .col-12:before, .col-12:after{
+    display: none;
+  }
+}
+.contact{
+  font-family: "Lato", sans-serif;
+  margin-top: 30px;
+  .col-12:nth-child(2){
+    padding-left: 30px;
+  }
+  textarea{
+    resize: none;
+  }
+  p{
+    display: flex;
+    iframe{
+      margin-top: 35px;
+    }
+  }
+  .iti{
+    display: block;
+  }
+  h3{
+    text-transform: uppercase;
+  }
+  input:focus, textarea:focus{
+    border-color:#ccc;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+  }
+  input, textarea{
+    border-radius: 0;
+  }
+  button{
+    background: #e03114;
+    border: none;
+    color:#fff;
+  }
+  button:hover, button:target, button:focus, button:active:focus{
+    background: red;
+  }
+}

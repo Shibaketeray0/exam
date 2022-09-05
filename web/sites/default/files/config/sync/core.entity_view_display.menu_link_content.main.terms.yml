@@ -1,0 +1,26 @@
+uuid: e21dc83f-4682-4221-afb2-a17cbcecaa8b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.menu_link_content.terms
+    - system.menu.main
+  module:
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: menu_link_content.main.terms
+targetEntityType: menu_link_content
+bundle: main
+mode: terms
+content:
+  children:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

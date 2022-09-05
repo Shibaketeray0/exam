@@ -1,0 +1,8 @@
+uuid: 80e85705-5954-45a8-b2c6-154b4322d8e3
+langcode: en
+status: true
+dependencies: {  }
+id: news_day_date_format
+label: 'News day date format'
+locked: false
+pattern: j

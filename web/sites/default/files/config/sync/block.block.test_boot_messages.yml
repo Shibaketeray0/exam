@@ -1,0 +1,22 @@
+uuid: d56e7f68-a200-4aa4-8bfa-e8237e186ced
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - test_boot
+_core:
+  default_config_hash: KC12e0aosUnBBs5bd374JVcQjJaFNOSIHzu0dUGf22o
+id: test_boot_messages
+theme: test_boot
+region: navigation
+weight: null
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

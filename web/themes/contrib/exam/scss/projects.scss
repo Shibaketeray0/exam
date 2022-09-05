@@ -1,0 +1,134 @@
+@import "mixins";
+@import "custom-variables";
+.projects_title{
+  @include title_styles;
+  margin-top: 111px;
+}
+.col-12:after{
+  max-width: 552px;
+}
+.projects{
+  background: repeating-linear-gradient(-45deg, #dbdbdb 0, #dbdbdb 1px, transparent 1px, transparent 8px);
+  font-family: 'Lato', sans-serif;
+  margin-top: 19px;
+  .block-views{
+    padding:70px 0 130px 0;
+  }
+  .view-content{
+    display: flex;
+    .views-row{
+      flex:0 0 auto;
+      width: 25%;
+      max-width: 290px;
+      margin-right:30px;
+    }
+  }
+  .views-row{
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    background: #fff;
+    min-height: 442px;
+    h3{
+      font-size: 24px;
+      text-transform: uppercase;
+      margin-top: 36px;
+      letter-spacing: 0.3px;
+    }
+    p{
+      margin-top: 7.5px;
+      font-size: 15px;
+      letter-spacing:0.3px;
+      word-spacing: 1px;
+      margin-bottom: 23px;
+    }
+    a{
+      margin-right: 4px;
+      padding:5px 10px;
+      background:$main_black;
+      color:#fff;
+      text-decoration: none;
+    }
+    /*color for category of project*/
+    .light_green{
+      color:#1bbc9b;
+    }
+    .violet{
+      color:#9b58b5;
+    }
+    .light_red{
+      color:#e84c3d;
+    }
+    .light_blue{
+      color:#28a9e0;
+    }
+  }
+}
+.projects_full{
+  margin-top:30px;
+  h3{
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-top: 36px;
+    letter-spacing: 0.3px;
+  }
+  p{
+    margin-top: 7.5px;
+    font-size: 15px;
+    letter-spacing:0.3px;
+    word-spacing: 1px;
+    margin-bottom: 23px;
+  }
+  .light_green{
+    text-transform: uppercase;
+    color:#1bbc9b;
+  }
+  .violet{
+    text-transform: uppercase;
+    color:#9b58b5;
+  }
+  .light_red{
+    text-transform: uppercase;
+    color:#e84c3d;
+  }
+  .light_blue{
+    text-transform: uppercase;
+    color:#28a9e0;
+  }
+}
+.pagination {
+  margin-top: 43px;
+  .active {
+    a {
+      color: #000;
+      background-color: #dddcdd;
+    }
+    a:hover {
+      color: #000;
+      background-color: #dddcdd;
+    }
+    a:focus{
+      background-color:#dddcdd;
+      color:#000;
+    }
+  }
+  li{
+    a {
+      font-size: 16px;
+      margin-left: 1px;
+      border: none;
+      color: #000;
+      background-color: transparent;
+    }
+    a:hover {
+      background-color: transparent;
+      color:#000;
+    }
+  }
+  li:first-child, li:last-child, .active{
+    a{
+      border-radius: 50%;
+      color:#000;
+    }
+  }
+}

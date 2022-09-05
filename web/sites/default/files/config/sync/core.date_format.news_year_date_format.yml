@@ -1,0 +1,8 @@
+uuid: 8df61263-f892-4379-ad17-124b9a44c38f
+langcode: en
+status: true
+dependencies: {  }
+id: news_year_date_format
+label: 'News year date format'
+locked: false
+pattern: 'Y'

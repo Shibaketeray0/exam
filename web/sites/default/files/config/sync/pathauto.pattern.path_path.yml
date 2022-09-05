@@ -1,0 +1,26 @@
+uuid: 838d4c1e-5ded-4664-b975-342866283e7f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: path_path
+label: Path
+type: 'canonical_entities:node'
+pattern: '[node:title]'
+selection_criteria:
+  d9f0a12a-38a3-4d24-96f8-c00f77101e4c:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: d9f0a12a-38a3-4d24-96f8-c00f77101e4c
+    context_mapping:
+      node: node
+    bundles:
+      clients: clients
+      content_page: content_page
+      news_: news_
+      projects: projects
+      services: services
+selection_logic: and
+weight: -5
+relationships: {  }

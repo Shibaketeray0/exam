@@ -1,0 +1,98 @@
+uuid: 387ec303-510c-487d-8412-9e31aabe3716
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.projects.body
+    - field.field.node.projects.field_project_image
+    - field.field.node.projects.layout_builder__layout
+    - node.type.projects
+  module:
+    - layout_builder
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          6decbdb7-d219-469c-8e60-1bb8dbf716c4:
+            uuid: 6decbdb7-d219-469c-8e60-1bb8dbf716c4
+            region: content
+            configuration:
+              id: 'extra_field_block:node:projects:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 0
+            additional: {  }
+          b4ae5ae6-ebed-4c5f-bd08-c4731e64d149:
+            uuid: b4ae5ae6-ebed-4c5f-bd08-c4731e64d149
+            region: content
+            configuration:
+              id: 'field_block:node:projects:field_project_image'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          5a4ac10f-37de-4136-9115-582248c6e2f1:
+            uuid: 5a4ac10f-37de-4136-9115-582248c6e2f1
+            region: content
+            configuration:
+              id: 'field_block:node:projects:body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_summary_or_trimmed
+                label: hidden
+                settings:
+                  trim_length: 600
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+        third_party_settings: {  }
+id: node.projects.teaser
+targetEntityType: node
+bundle: projects
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_project_image:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true
+  layout_builder__layout: true
+  search_api_excerpt: true

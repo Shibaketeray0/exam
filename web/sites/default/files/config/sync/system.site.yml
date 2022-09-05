@@ -1,0 +1,14 @@
+_core:
+  default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
+langcode: en
+uuid: 98d2babb-004b-4495-b02d-9453674211e5
+name: 'Quarantie '
+mail: denishomov2015@gmail.com
+slogan: 'Sofware Development'
+page:
+  403: ''
+  404: ''
+  front: /node/15
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en

@@ -1,0 +1,130 @@
+@import "mixins";
+@import "custom-variables";
+.team_title{
+  margin-top: 95px;
+  @include title_styles;
+  h2{
+    min-width: 156px;
+    font-weight: 800;
+  }
+}
+.team{
+  margin-top: 29px;
+  margin-bottom: 190px;
+  .view-content{
+    display: flex;
+  }
+  .views-row{
+    margin-right:30px;
+    max-width: 290px;
+    font-family: "Lato" ,sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    .views-field-link-flag{
+      width: 20px;
+      height: 20px;
+      .action-flag{
+        position: relative;
+        width: 20px;
+        height: 20px;
+        a{
+          display: block;
+          opacity: 0;
+          width: 20px;
+          height: 20px;
+        }
+      }
+      .action-flag:before{
+        left:-1px;
+        position: absolute;
+        content: '';
+        z-index: -1;
+        width: 20px;
+        height: 20px;
+        background: url("../images/heart_disabled.png") center no-repeat;
+        background-size:20px;
+      }
+      .action-unflag{
+        position: relative;
+        width: 20px;
+        height: 20px;
+        a{
+          display: block;
+          opacity: 0;
+          width: 20px;
+          height: 20px;
+        }
+      }
+      .action-unflag:before {
+        left: -1px;
+        position: absolute;
+        content: '';
+        z-index: -1;
+        width: 20px;
+        height: 20px;
+        background: url("../images/heart_enabled.png") center no-repeat;
+        background-size: 20px;
+      }
+    }
+    .views-field-fieldset {
+      margin-top:25px;
+      div{
+        display: flex;
+        justify-content: space-around;
+      }
+    }
+    h3{
+      font-size: 24px;
+      margin-top: 35px;
+      letter-spacing: 0.3px;
+    }
+    p{
+      margin-bottom: 0;
+      font-size:12px ;
+    }
+    .profession{
+      margin-top: 1.25px;
+      color:#ccc;
+      margin-bottom: 21px;
+    }
+    a{
+      text-decoration: none;
+      color:#fff;
+      font-size: 14px;
+      padding:7px 9px;
+      background:$main_black;
+    }
+    ul{
+      list-style-type: none;
+      padding:0;
+      display: inline-flex;
+      li{
+        margin-left: 10px;
+        a{
+          display: block;
+          width: 25px;
+          height: 25px;
+        }
+      }
+      li:first-child{
+        a{
+          background: url("../images/fb.png") center no-repeat;
+        }
+        margin-left: 0;
+      }
+      li:nth-child(2){
+        a{
+          background: url("../images/twit.png") center no-repeat;
+        }
+      }
+      li:last-child{
+        a{
+          background: url("../images/in.png") center no-repeat;
+        }
+      }
+    }
+  }
+  .views-row:nth-child(4){
+    margin-right: 0;
+  }
+}

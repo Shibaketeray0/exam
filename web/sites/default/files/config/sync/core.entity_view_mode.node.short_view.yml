@@ -1,0 +1,10 @@
+uuid: 0a0e5035-d69c-461b-9b07-7fa1acdc3ca6
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.short_view
+label: 'Short view'
+targetEntityType: node
+cache: true

@@ -1,0 +1,193 @@
+uuid: 46d48800-5a4e-491c-9056-39f5f772b7ba
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.news_.body
+    - field.field.node.news_.field_date_day
+    - field.field.node.news_.field_date_month
+    - field.field.node.news_.field_date_year
+    - field.field.node.news_.field_writerr
+    - field.field.node.news_.layout_builder__layout
+    - node.type.news_
+  module:
+    - datetime
+    - ds
+    - layout_builder
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: ds_1col_wrapper
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          wrappers:
+            ds_content: div
+          outer_wrapper: div
+          attributes: class|date
+          link_attribute: ''
+          link_custom: ''
+          classes:
+            layout_class: {  }
+        components:
+          cf227fa0-99c7-4e19-8381-98533252ca4c:
+            uuid: cf227fa0-99c7-4e19-8381-98533252ca4c
+            region: ds_content
+            configuration:
+              id: 'field_block:node:news_:field_date_month'
+              label: date_month
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: datetime_default
+                label: hidden
+                settings:
+                  timezone_override: ''
+                  format_type: news_date_format_
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          f17f140d-49d4-4b1f-8026-1ddd66225544:
+            uuid: f17f140d-49d4-4b1f-8026-1ddd66225544
+            region: ds_content
+            configuration:
+              id: 'field_block:node:news_:field_date_day'
+              label: date_day
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: datetime_default
+                label: hidden
+                settings:
+                  timezone_override: ''
+                  format_type: news_day_date_format
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          65064413-4071-46e6-ae3b-80da96851c7d:
+            uuid: 65064413-4071-46e6-ae3b-80da96851c7d
+            region: ds_content
+            configuration:
+              id: 'field_block:node:news_:field_date_year'
+              label: date_year
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: datetime_default
+                label: hidden
+                settings:
+                  timezone_override: ''
+                  format_type: news_year_date_format
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          940d1f02-5360-4b88-be69-d32519f487d7:
+            uuid: 940d1f02-5360-4b88-be69-d32519f487d7
+            region: content
+            configuration:
+              id: 'field_block:node:news_:field_writerr'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_entity_view
+                label: hidden
+                settings:
+                  view_mode: default
+                  link: true
+                third_party_settings: {  }
+            weight: 10
+            additional: {  }
+          5347386b-ce36-40a6-82bd-6c5e75a5e8f7:
+            uuid: 5347386b-ce36-40a6-82bd-6c5e75a5e8f7
+            region: content
+            configuration:
+              id: 'field_block:node:news_:body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_summary_or_trimmed
+                label: hidden
+                settings:
+                  trim_length: 600
+                third_party_settings: {  }
+            weight: 11
+            additional: {  }
+        third_party_settings: {  }
+id: node.news_.teaser
+targetEntityType: node
+bundle: news_
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_date_day:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: news_day_date_format
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_date_month:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: news_date_format_
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_date_year:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: news_year_date_format
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_writerr:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden:
+  langcode: true
+  layout_builder__layout: true
+  links: true
+  search_api_excerpt: true

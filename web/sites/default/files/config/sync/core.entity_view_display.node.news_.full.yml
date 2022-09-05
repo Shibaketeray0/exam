@@ -1,0 +1,231 @@
+uuid: 11fffb6a-b09a-4ce6-9205-b3a193791b55
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.news_.body
+    - field.field.node.news_.field_date_day
+    - field.field.node.news_.field_date_month
+    - field.field.node.news_.field_date_year
+    - field.field.node.news_.field_writerr
+    - field.field.node.news_.layout_builder__layout
+    - node.type.news_
+  module:
+    - layout_builder
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          a89ce266-5bef-4304-a7f4-2832681547e5:
+            uuid: a89ce266-5bef-4304-a7f4-2832681547e5
+            region: blb_region_col_1
+            configuration:
+              id: 'field_block:node:news_:field_writerr'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_entity_view
+                label: hidden
+                settings:
+                  view_mode: default
+                  link: true
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          a3e2b99c-6fb1-435b-aa48-b357a14f8101:
+            uuid: a3e2b99c-6fb1-435b-aa48-b357a14f8101
+            region: blb_region_col_1
+            configuration:
+              id: 'field_block:node:news_:body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: 'bootstrap_layout_builder:blb_col_1'
+        layout_settings:
+          label: body
+          context_mapping: {  }
+          container_wrapper_classes: content_body
+          container_wrapper_attributes: null
+          container_wrapper:
+            bootstrap_styles:
+              background:
+                background_type: color
+              background_color:
+                class: null
+              background_media:
+                image:
+                  media_id: null
+                video:
+                  media_id: null
+                background_options:
+                  background_position: center
+                  background_repeat: no-repeat
+                  background_attachment: not_fixed
+                  background_size: cover
+              text_color:
+                class: null
+              text_alignment:
+                class: null
+              padding:
+                class: _none
+              padding_left:
+                class: _none
+              padding_top:
+                class: _none
+              padding_right:
+                class: _none
+              padding_bottom:
+                class: _none
+              margin:
+                class: _none
+              margin_left:
+                class: _none
+              margin_top:
+                class: _none
+              margin_right:
+                class: _none
+              margin_bottom:
+                class: _none
+              border:
+                border_style:
+                  class: null
+                border_width:
+                  class: _none
+                border_color:
+                  class: null
+                rounded_corners:
+                  class: _none
+                border_left_style:
+                  class: null
+                border_left_width:
+                  class: _none
+                border_left_color:
+                  class: null
+                border_top_style:
+                  class: null
+                border_top_width:
+                  class: _none
+                border_top_color:
+                  class: null
+                border_right_style:
+                  class: null
+                border_right_width:
+                  class: _none
+                border_right_color:
+                  class: null
+                border_bottom_style:
+                  class: null
+                border_bottom_width:
+                  class: _none
+                border_bottom_color:
+                  class: null
+                rounded_corner_top_left:
+                  class: _none
+                rounded_corner_top_right:
+                  class: _none
+                rounded_corner_bottom_left:
+                  class: _none
+                rounded_corner_bottom_right:
+                  class: _none
+              scroll_effects:
+                class: null
+          container_wrapper_bg_color_class: ''
+          container_wrapper_bg_media: null
+          container: container
+          section_classes: ''
+          section_attributes: null
+          regions_classes:
+            blb_region_col_1: ''
+          regions_attributes:
+            blb_region_col_1: {  }
+          breakpoints: {  }
+          layout_regions_classes: {  }
+          remove_gutters: '0'
+        components:
+          4c375aeb-5291-4d04-bb27-ff4e34194b72:
+            uuid: 4c375aeb-5291-4d04-bb27-ff4e34194b72
+            region: blb_region_col_1
+            configuration:
+              id: 'field_block:node:news_:body'
+              label: Body
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          e22d1d97-6943-4d7e-8915-4f8b8bc00c1c:
+            uuid: e22d1d97-6943-4d7e-8915-4f8b8bc00c1c
+            region: blb_region_col_1
+            configuration:
+              id: 'field_block:node:news_:field_writerr'
+              label: writer
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_entity_view
+                label: hidden
+                settings:
+                  view_mode: full
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+id: node.news_.full
+targetEntityType: node
+bundle: news_
+mode: full
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: blb_region_col_1
+  field_writerr:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: blb_region_col_1
+hidden:
+  field_date_day: true
+  field_date_month: true
+  field_date_year: true
+  langcode: true
+  layout_builder__layout: true
+  links: true
+  search_api_excerpt: true

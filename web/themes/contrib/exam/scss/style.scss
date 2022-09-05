@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+@import 'mixins';
+@import 'custom-variables';
+@import 'node_modules/bootstrap/scss/bootstrap-grid.scss';
+
+@import "fonts";
+@import "header";
+@import "about_block";
+@import "services";
+@import "projects";
+@import "our_team";
+@import "news";
+@import "clients";
+@import "footer";
+@import "contact";
+/*basic overrides*/
+h1,h2,h3,h4,h5,h6{
+  margin:0;
+}
+.row{
+  .view-main-search-page-{
+    max-width: 1250px;
+    margin: 30px auto;
+    span{
+      font-family: "Lato", sans-serif;
+      display: block;
+      margin-top: 30px;
+      a{
+        text-transform: uppercase;
+        padding:15px 5px;
+        transition: 0.3s ease;
+        text-decoration: none;
+      }
+      a:hover{
+        transition: 0.3s ease;
+        background: #ccc;
+      }
+    }
+    input{
+      display: inline-block;
+    }
+    .form--inline{
+      display: flex;
+    }
+  }
+}
+.mm-slideout{
+  display: flex;
+  flex-direction: column;
+}
+.dialog-off-canvas-main-canvas{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+body{
+  height: 100%;
+  margin:0;
+  padding:0;
+  display: flex;@import "header";
+
+  flex-direction: column;
+}
+html{
+  height:100%
+}
+/*wrapper for main content to push footer to the bottom of the page*/
+.wrapper2{
+  flex: 1 0 auto;
+}
+.row{
+  margin-left:0;
+  margin-right: 0;
+}
+.wrapper{
+  background: url("../images/header.png") center no-repeat;
+  min-height: 700px;
+  margin-top: -155px;
+  position: relative;
+  z-index: -1;
+}
+/*to hide "..." when pager under projects has 4 or more pages */
+li[role=presentation]{
+  display: none;
+}
+/*margin for dummy content on "About" page*/
+.lorem_content{
+  margin-top: 30px;
+}
+/*css for each page e.g. separate page of service, worker, project etc. */
+.services_full{
+  .block-extra-field-blocknodeour-teamflag-custom-like{
+    width: 20px;
+    height: 20px;
+    .action-flag{
+      position: relative;
+      width: 20px;
+      height: 20px;
+      a{
+        display: block;
+        opacity: 0;
+        width: 20px;
+        height: 20px;
+      }
+    }
+    .action-flag:before{
+      left:-1px;
+      position: absolute;
+      content: '';
+      z-index: -1;
+      width: 20px;
+      height: 20px;
+      background: url("../images/heart_disabled.png") center no-repeat;
+      background-size:20px;
+    }
+    .action-unflag{
+      position: relative;
+      width: 20px;
+      height: 20px;
+      a{
+        display: block;
+        opacity: 0;
+        width: 20px;
+        height: 20px;
+      }
+    }
+    .action-unflag:before {
+      left: -1px;
+      position: absolute;
+      content: '';
+      z-index: -1;
+      width: 20px;
+      height: 20px;
+      background: url("../images/heart_enabled.png") center no-repeat;
+      background-size: 20px;
+    }
+  }
+  img{
+    height:290px;
+    width:290px;
+  }
+  .views-row{
+    .views-field-title{
+      a{
+        text-transform: uppercase;
+        font-family: "lato", sans-serif;
+        text-decoration: none;
+        color:$light_blue;
+        padding:12px;
+        transition:0.3s ease;
+      }
+      a:hover{
+        background:lightgray;
+        transition:0.3s ease;
+      }
+      margin:15px 0;
+    }
+  }
+}
+.is-promoted{
+  margin: 0;
+  background: none;
+}
+.services_full{
+  margin-top:30px;
+  font-family: "Lato", sans-serif;
+  h3{
+    margin-top: 20px;
+    text-transform: uppercase;
+  }
+  .profession{
+    margin-top: 1.25px;
+    color:#ccc;
+    margin-bottom: 5px;
+  }
+  .look-at-me{
+    margin-top: 10px;
+    a{
+      text-transform: uppercase;
+      text-decoration: none;
+      color:#fff;
+      font-size: 14px;
+      padding:7px 9px;
+      background:$main_black;
+    }
+  }
+  ul{
+    list-style-type: none;
+    margin:15px 0 0 0;
+    padding:0;
+    display: inline-flex;
+    li{
+      margin-left: 10px;
+      a{
+        display: block;
+        width: 25px;
+        height: 25px;
+      }
+    }
+    li:first-child{
+      a{
+        background: url("../images/fb.png") center no-repeat;
+      }
+      margin-left: 0;
+    }
+    li:nth-child(2){
+      a{
+        background: url("../images/twit.png") center no-repeat;
+      }
+    }
+    li:last-child{
+      a{
+        background: url("../images/in.png") center no-repeat;
+      }
+    }
+  }
+}
+.content_body{
+  img{
+    width: 78px;
+    height:78px;
+    margin-bottom: 30px;
+  }
+  margin-top:30px;
+  .field--name{
+    &-field-writerr{
+      text-transform: uppercase;
+      span{
+        vertical-align: top;
+        font-size: 12px;
+        line-height: 7px;
+      }
+      span:nth-child(2){
+        margin-left:10px;
+        letter-spacing:-0.4px;
+        color:#ccc;
+      }
+      span:nth-child(3){
+        color:#000;
+      }
+      span:nth-child(4){
+        color:$light_blue;
+      }
+    }
+  }
+}
+.services_page{
+  margin-top: 30px;
+}
+@import "media_queries";

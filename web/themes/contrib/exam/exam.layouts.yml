@@ -1,0 +1,38 @@
+header_without_bg:
+  label: 'Header_without_bg'
+  path: layouts/header_without_bg
+  template: header_without_bg
+  library: layout_builder/header_without_bg
+  category: 'Columns: 4'
+  default_region: first
+  icon_map:
+    - [ first, second, third]
+  regions:
+    first:
+      label: First
+    second:
+      label: Second
+    third:
+      label: Third
+
+
+
+header:
+  label: 'Header'
+  path: layouts/header
+  template: layout--fourcol-section
+  library: layout_builder/header
+  category: 'Columns: 4'
+  default_region: first
+  icon_map:
+    - [first, second, third, fourth]
+  regions:
+    first:
+      label: First
+    second:
+      label: Second
+    third:
+      label: Third
+    fourth:
+      label: Fourth
+

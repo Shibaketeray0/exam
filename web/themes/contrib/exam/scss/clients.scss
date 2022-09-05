@@ -1,0 +1,41 @@
+@import "mixins";
+@import "custom-variables";
+.clients_title{
+  @include title_styles;
+  margin-top: 28px;
+  margin-left:3px;
+}
+.clients_slider{
+  .view-content{
+    display: flex;
+    align-items: center;
+  }
+  img{
+    width: 130px;
+  }
+  .views-row{
+    margin-left: 29px;
+  }
+  .views-row:nth-child(1){
+    margin-left: 0;
+  }
+}
+.slick-track{
+  display: flex !important;
+  align-items: center;
+  margin:30px 0 75px 0;
+}
+.clients_menu_page{
+  .view-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    .views-row{
+      width: 25%;
+    }
+  }
+  img{
+    width:150px;
+    margin:30px auto;
+  }
+}

@@ -1,0 +1,15 @@
+uuid: 301f1d3d-6c32-4554-8d3c-8248c10febf7
+langcode: en
+status: true
+dependencies:
+  config:
+    - flag.flag.custom_like
+  module:
+    - flag
+id: flag_action.custom_like_unflag
+label: 'Unflag this item'
+type: node
+plugin: 'flag_action:custom_like_unflag'
+configuration:
+  flag_id: custom_like
+  flag_action: unflag

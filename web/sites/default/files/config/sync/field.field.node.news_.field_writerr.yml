@@ -1,0 +1,29 @@
+uuid: 127a933b-6d2f-4b68-b80c-2887d0d78ed2
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.basic
+    - field.storage.node.field_writerr
+    - node.type.news_
+id: node.news_.field_writerr
+field_name: field_writerr
+entity_type: node
+bundle: news_
+label: writer
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:block_content'
+  handler_settings:
+    target_bundles:
+      basic: basic
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

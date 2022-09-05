@@ -1,0 +1,15 @@
+uuid: bd05b845-3bd3-47d0-b887-69bab3ea566c
+langcode: en
+status: true
+dependencies:
+  config:
+    - flag.flag.custom_like
+  module:
+    - flag
+id: flag_action.custom_like_flag
+label: 'Flag this item'
+type: node
+plugin: 'flag_action:custom_like_flag'
+configuration:
+  flag_id: custom_like
+  flag_action: flag

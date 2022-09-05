@@ -1,0 +1,14 @@
+@import "node_modules/bootstrap/scss/functions";
+
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1265px
+);
+@import "node_modules/bootstrap/scss/variables";
+$light_blue: #6e9bca;
+$main_black: #373645;
+

@@ -1,0 +1,8 @@
+uuid: 20446e6e-2d57-40c8-8470-6cc559db5a0e
+langcode: en
+status: true
+dependencies: {  }
+id: news_date_format_
+label: 'News month date format '
+locked: false
+pattern: M

@@ -1,0 +1,1 @@
+{"version":3,"sources":["style.scss","style.css"],"names":[],"mappings":"AAQA;EACA,eAAA;ACPA","file":"style.css","sourcesContent":["\n\n// Import sass partials\n@import \"scss/variables/**/*.scss\";\n@import \"scss/abstractions/**/*.scss\";\n@import \"scss/base/**/*.scss\";\n@import \"scss/components/**/*.scss\";\n\nbody{\nbackground:red;\n}\n","body {\n  background: red;\n}"]}

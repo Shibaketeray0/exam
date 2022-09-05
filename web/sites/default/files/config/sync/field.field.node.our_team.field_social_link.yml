@@ -1,0 +1,23 @@
+uuid: 81485265-1332-4b5c-bcf6-8b0c10d3787c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_social_link
+    - node.type.our_team
+  module:
+    - link
+id: node.our_team.field_social_link
+field_name: field_social_link
+entity_type: node
+bundle: our_team
+label: social_link
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

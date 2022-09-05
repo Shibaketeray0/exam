@@ -1,0 +1,8 @@
+uuid: 494890b6-0024-400c-ad43-ed0a1f04cd16
+langcode: en
+status: true
+dependencies: {  }
+id: icons
+label: Icons
+description: ''
+locked: false

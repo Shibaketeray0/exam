@@ -1,0 +1,17 @@
+uuid: dfd09afd-4e03-4489-b20d-bf9a63fd19c9
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Services
+type: services
+description: 'Content type for services '
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

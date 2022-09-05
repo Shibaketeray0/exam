@@ -1,0 +1,69 @@
+uuid: e5ce03f2-2453-4847-a9e4-6bdbaecad379
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.news_.body
+    - field.field.node.news_.field_date_day
+    - field.field.node.news_.field_date_month
+    - field.field.node.news_.field_date_year
+    - field.field.node.news_.field_writerr
+    - field.field.node.news_.layout_builder__layout
+    - node.type.news_
+  module:
+    - datetime
+    - text
+    - user
+id: node.news_.default
+targetEntityType: node
+bundle: news_
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_date_day:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: news_day_date_format
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_date_month:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: news_date_format_
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_date_year:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: news_year_date_format
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_writerr:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: true
+    third_party_settings: {  }
+    weight: 5
+    region: content
+hidden:
+  langcode: true
+  layout_builder__layout: true
+  links: true
+  search_api_excerpt: true

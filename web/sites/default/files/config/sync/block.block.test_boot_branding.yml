@@ -1,0 +1,25 @@
+uuid: b628238c-93cf-4b9d-aad8-95b291096ff5
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - test_boot
+_core:
+  default_config_hash: d-0emr1mEq7sFKDu5RHUJckvNk62hvIZdRwPEfnJyGg
+id: test_boot_branding
+theme: test_boot
+region: navigation
+weight: null
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

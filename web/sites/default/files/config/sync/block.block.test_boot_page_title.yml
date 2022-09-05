@@ -1,0 +1,20 @@
+uuid: 1208a89e-04eb-43c0-8bde-61d87a78ea19
+langcode: en
+status: false
+dependencies:
+  theme:
+    - test_boot
+_core:
+  default_config_hash: ItFhhiUOoeR7oIq73ZaCV7PAYrOwXZ-9fazMzF5DJXM
+id: test_boot_page_title
+theme: test_boot
+region: navigation
+weight: null
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }
