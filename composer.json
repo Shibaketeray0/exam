@@ -50,6 +50,7 @@
         "drupal/views_fieldsets": "^3.4",
         "drupal/votingapi": "^3.0@beta",
         "drupal/webform": "^6.1",
+        "drush/drush": "^11.1",
         "twbs/bootstrap": "5.0.2"
     },
     "conflict": {
